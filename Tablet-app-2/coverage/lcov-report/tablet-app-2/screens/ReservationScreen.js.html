@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for Tablet-app-2/screens/ReservationScreen.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">All files</a> / <a href="index.html">Tablet-app-2/screens</a> ReservationScreen.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">50% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>23/46</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">75% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>3/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">50% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>23/46</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
+import { 
+    Button,
+    // Form,
+    ScrollView, 
+    StyleSheet,
+    String,
+    Text,
+    TextInput,
+    View,
+} from 'react-native';
+// import { ExpoLinksView } from '@expo/samples';
+// import { gray } from 'ansi-colors';
+&nbsp;
+import t from 'tcomb-form-native';
+// var t = require('tcomb-form-native');
+&nbsp;
+const Form = t.form.Form;
+&nbsp;
+const Reservation = t.struct({
+  confirmationNumber: t.String,
+  lastName: t.String,
+});
+&nbsp;
+export default class ReservationScreen extends React.Component {
+  constructor(){
+    super();
+    global.firstNameVar;
+    global.lastNameVar;
+    global.emailVar;
+    global.phoneVar;
+    global.dobVar;
+    global.driversLicenseVar;
+    global.driversLicenseStateVar;
+    global.creditCardTypeVar;
+    global.creditCardNumberVar;
+    global.zipVar;
+    global.stateVar;
+    global.expirationDateVar;
+    global.additionalEmailVar;
+    global.cityVar;
+    global.countryVar;
+    global.addressVar;
+  }
+&nbsp;
+  static navigationOptions = {
+    title: 'Find your reservation',
+  };
+&nbsp;
+&nbsp;
+  handleSearchButton = async () =&gt; {
+    const fetch = require('node-fetch');
+    const { navigate } = this.props.navigation
+<span class="cstat-no" title="statement not covered" >    navigate("ReservationView", {screen: "ReservationListScreen"})</span>
+    const value = <span class="cstat-no" title="statement not covered" >this._form.getValue();</span> // use that ref to get the form value
+    // console.log('value: ', value);
+    const confirmationNum = <span class="cstat-no" title="statement not covered" >value.confirmationNumber;</span>
+    // console.log(confirmationNum);
+    const url = (<span class="cstat-no" title="statement not covered" >'https://wp9akim1u0.execute-api.us-east-1.amazonaws.com/dev/reservations/' + confirmationNum)</span>;
+    // console.log(url);
+  
+    // fetch(url) //this is for GET request
+    //   .then(res =&gt; res.json())
+    //   .then(json =&gt; console.log(json));
+    const response = <span class="cstat-no" title="statement not covered" >await fetch(url)</span>
+    const data = <span class="cstat-no" title="statement not covered" >await response.json()</span>
+    // console.log(data)
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    firstNameVar = data.first_name;</span>
+<span class="cstat-no" title="statement not covered" >    lastNameVar = data.last_name;</span>
+<span class="cstat-no" title="statement not covered" >    creditCardNumberVar = data.credit_card_number;</span>
+<span class="cstat-no" title="statement not covered" >    emailVar = data.email;</span>
+<span class="cstat-no" title="statement not covered" >    additionalEmailVar = data.additional_address;</span>
+<span class="cstat-no" title="statement not covered" >    dobVar = data.date_of_birth;</span>
+<span class="cstat-no" title="statement not covered" >    creditCardTypeVar = data.credit_card_type;</span>
+<span class="cstat-no" title="statement not covered" >    cityVar = data.city;</span>
+<span class="cstat-no" title="statement not covered" >    stateVar = data.state;</span>
+<span class="cstat-no" title="statement not covered" >    countryVar = data.country;</span>
+<span class="cstat-no" title="statement not covered" >    expirationDateVar = data.expiration_date;</span>
+<span class="cstat-no" title="statement not covered" >    zipVar = data.zip;</span>
+<span class="cstat-no" title="statement not covered" >    phoneVar = data.phone;</span>
+<span class="cstat-no" title="statement not covered" >    driversLicenseStateVar = data.drivers_license_state;</span>
+<span class="cstat-no" title="statement not covered" >    driversLicenseVar = data.drivers_license;</span>
+<span class="cstat-no" title="statement not covered" >    addressVar = data.address;</span>
+    
+&nbsp;
+    // console.log(firstNameVar);
+&nbsp;
+  }
+&nbsp;
+&nbsp;
+  render() {
+    return (
+      &lt;ScrollView style={styles.container}&gt; 
+      &lt;View style={styles.container}&gt;
+        &lt;Form 
+          // TO DO: trying to make it so that the class name can be used in testing
+          classname='reservationform'
+          ref={<span class="fstat-no" title="function not covered" >c </span>=&gt; <span class="cstat-no" title="statement not covered" >this._form = c}</span> // assign a ref 
+          type={Reservation} 
+          /&gt; 
+&nbsp;
+        &lt;Button
+            title="Search my reservation"
+            color="#FFCC00"
+            accessibilityLabel="Search for an existing reservation"
+            // onPress={() =&gt; navigate("ReservationView", {screen: "ReservationListScreen"})}
+            onPress= {this.handleSearchButton}
+          /&gt;
+      &lt;/View&gt;
+&nbsp;
+      &lt;/ScrollView&gt;
+    );
+  }
+}
+&nbsp;
+const styles = StyleSheet.create({
+  container: {
+    // flex: 1,
+    // paddingTop: 15,
+    // backgroundColor: '#fff',
+    // justifyContent: 'center',
+    marginTop: 50,
+    padding: 20,
+    backgroundColor: '#ffffff',
+  },
+  form: {
+    alignContent: 'center',
+  },
+});
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Apr 26 2019 09:39:21 GMT-0400 (Eastern Daylight Time)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>
